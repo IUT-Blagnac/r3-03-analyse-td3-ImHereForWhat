@@ -9,6 +9,7 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
+    
     /**
      * Create the test case
      *
@@ -40,6 +41,23 @@ public class AppTest
      */
     public void testHelloParameter()
     {
-        assertEquals("Hello JMB!", App.hello("Hello JMB!"));
+        assertEquals("Hello xX_DarkLord5866Xx!", App.hello("Hello xX_DarkLord5866Xx!"));
     }
+
+     /**
+     * Test the return with empty parameter
+     */
+    public void testGoodbyeEmptyParameter()
+    {
+        assertEquals("See you World !", App.goodbye());
+    }
+
+    /**
+     * Test the return with a parameter
+     */
+    public void testGoodbyeParameter()
+    {
+        assertEquals("Goodbye xX_DarkLord5866Xx !", App.goodbye("Goodbye xX_DarkLord5866Xx !"));
+    }
+
 }
